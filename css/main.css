@@ -57,7 +57,6 @@ svg,
 video {
     vertical-align: middle;
 }
-
 /*
  * Remove default fieldset styles.
  */
@@ -88,17 +87,22 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   my custom styles
    ========================================================================== */
 
+	.carousel.slide .item img{
+		width: auto;
+		height: 600px;
+	}
+	
+/*	#carousel-example {
+		mask: url(#mask);
+	}*/
 
-
-
-
-
-
-
-
+	header svg {
+		 position: absolute;
+		     top: 0;
+	}
 
 
 

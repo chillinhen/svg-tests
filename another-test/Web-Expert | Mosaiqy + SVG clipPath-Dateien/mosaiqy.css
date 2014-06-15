@@ -1,0 +1,348 @@
+/**
+ * Basic style. Please don't change this section unless you're
+ * absolutely confident and you know what you're doing
+ */
+
+ body{
+    background-image:url(../../images/bg1.jpg);
+    background-size: cover;
+}
+
+@font-face {
+    font-family: 'CommandoCommando';
+    src: url('font/commando-webfont.eot');
+    src: url('font/commando-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/commando-webfont.woff') format('woff'),
+         url('font/commando-webfont.ttf') format('truetype'),
+         url('font/commando-webfont.svg#CommandoCommando') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('font/BebasNeue-webfont.eot');
+    src: url('font/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/BebasNeue-webfont.woff') format('woff'),
+         url('font/BebasNeue-webfont.ttf') format('truetype'),
+         url('font/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.js .mosaiqy.loading {
+    width           : 20px;
+    height          : 20px;
+    background      : transparent url(../lib-img/ajax-loader.gif) center center no-repeat;
+}
+
+	.no-js .mosaiqy.loading  {
+		border			: 0;
+	}
+
+
+.mosaiqy * {
+    margin      : 0;
+    padding     : 0;
+}
+
+
+.mosaiqy ul {
+    list-style      : none;
+    padding         : 0;
+    margin          : 0;    
+    position        : relative;
+    z-index         : 1;
+    overflow        : hidden;
+}
+
+.no-js .mosaiqy ul  {
+	height		: auto;
+	overflow	: hidden;
+}
+
+
+
+
+.no-js .mosaiqy li  {
+	float		: left;
+	position	: relative;
+	z-index		: 1;
+}
+
+.js .mosaiqy li {
+	position        : absolute;
+	z-index         : 1;
+	display         : block;
+	text-align      : left;
+	float           : none;
+}
+
+.js .mosaiqy li > div {
+	position        : relative;
+	z-index         : 1;
+	width           : 100%;
+	height          : 100%;
+}
+
+.js .mosaiqy.zoom li {
+	float           : left !important;
+	position        : static !important;
+}
+
+
+.js .mosaiqy li:hover {
+    z-index             : 20;    
+}
+
+    
+ 
+.mosaiqy figure {  
+    display         : block;
+}
+
+.mosaiqy img {
+    display         : block;
+    border          : 0;
+}
+
+.js .loading.mosaiqy img {
+    opacity         : 0;
+    -moz-opacity    : 0;
+    filter          : alpha(opacity=0);
+}
+
+
+.mosaiqy figcaption {
+    display             : none;    
+    position            : absolute;
+    z-index             : 2;
+    top                 : 0;
+    left                : 0;
+}
+
+
+.mosaiqy li.zoom figcaption,
+.mosaiqy li:hover figcaption {
+    display         : block;
+    text-indent     : 0;
+    color           : #4a4a4a;
+}
+
+.mosaiqy li.zoom figure,
+.mosaiqy li:hover figure {
+    display         : block;
+}
+
+.mosaiqy li.zoom figcaption {
+    text-indent     : -8478em;
+}
+
+
+
+.mosaiqy li {
+      -moz-transition-property              : all;
+      -moz-transition-timing-function       : ease-out;
+      -moz-transition-delay                 : 0s;
+      
+      -o-transition-property                : all;
+      -o-transition-timing-function         : ease-out;
+      -o-transition-delay                   : 0s;
+      
+      -webkit-transition-property           : all;
+      -webkit-transition-timing-function    : ease-out;
+      -webkit-transition-delay              : 0s;
+      
+      transition-property                   : all;
+      transition-timing-function            : ease-out;
+      transition-delay                      : 0s;
+}
+
+    .mosaiqy li.mosaiqy-zoom {
+        clear           : left;
+        width           : 100%;
+        height          : 0;
+        z-index         : 100;
+        background      : #f0f1f4  url(../lib-img/ajax-loader.gif) center center no-repeat;
+    }
+
+        .mosaiqy li.mosaiqy-zoom figure {
+            position        : relative;
+            display         : block;
+            width           : 100%;
+            height          : 100%;
+        }
+        
+
+    .mosaiqy .mosaiqy-zoom-image {
+        display         : none;
+        width           : 100% !important;
+        height          : auto !important;
+    }
+    
+    .mosaiqy .mosaiqy-zoom-close { 
+        display         : block;
+        width           : 45px;
+        height          : 45px;
+        background      : url(../lib-img/close.png) top left no-repeat;
+        position        : absolute;
+        z-index         : 10;
+        top             : 10px;
+        right           : 10px;
+        overflow        : hidden;
+        text-indent     : -8478em;
+        opacity         : 0;
+        -moz-opacity    : 0;
+        filter          : alpha(opacity=0)
+    }
+
+
+
+/**
+ * User styles
+ * In this section you can modify style according to your template
+ * These rules are suitable for the markup written into the demo templates
+ * If you change markup or if you  modify the style change the rules below.
+ */
+
+.no-js .mosaiqy ul {
+	margin		: 0 auto;
+	width		: 600px;
+}
+
+.js .mosaiqy  {
+    padding         : 4px;
+    margin          : 30px auto;
+}
+
+.mosaiqy li,
+.mosaiqy img {
+    width           : 175px;
+    height          : 200px;
+}
+
+
+.mosaiqy li figcaption {
+    background          : rgba(255, 255, 255, 0.7);
+    color               : #303134;
+    font-style          : italic;
+    font                : 13px Arial, Verdana, sans-serif;
+    height              : 100%;
+    width               : 100%;
+    border              : 2px solid transparent;
+    padding             : 8px;
+    height              : 115px;
+    width               : 180px;
+    opacity             : 0;
+    -webkit-transition  : opacity .5s ease;
+    -moz-transition     : opacity .5s ease;
+    -ms-transition      : opacity .5s ease;
+    -o-transition       : opacity .5s ease;
+	transition          : opacity .5s ease;
+}
+
+.ie7 .mosaiqy li figcaption,
+.ie8 .mosaiqy li figcaption {
+	background          : url(../lib-img/figcaption-IE-bg.png);
+}
+
+.mosaiqy li.zoom figcaption {
+    border          : 2px solid #adbecb;
+    cursor          : default;
+}
+
+    .mosaiqy li.mosaiqy-zoom figcaption {
+        position        : absolute;
+        z-index         : 2;
+        top             : auto;
+        bottom          : 0;
+        padding         : 1em 0;
+        height          : auto;
+        text-indent     : 12px;
+        display         : block;
+        width           : 100%;
+        vertical-align  : middle;
+        cursor          : default;
+    }
+
+
+
+
+.mosaiqy li figure a {
+    display         : block;
+    height          : 100%;
+    width           : 100%;
+    text-decoration : none;
+}
+
+.mosaiqy li a:hover {
+    cursor: pointer;
+}
+
+.mosaiqy li.zoom figcaption,
+.mosaiqy li figcaption:hover  {
+    opacity             : 1;
+}
+
+#back-summer{
+    background: transparent url(../../images/bucket.png) no-repeat left 5px;
+    color: #fed400;
+    text-transform: uppercase;
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 10px 10px 35px;
+    text-shadow: 0 2px 1px #000;
+    text-decoration: none;
+}
+
+header {
+  z-index: 10;
+  width: 96%;
+  padding: 2%;
+  text-align: left;
+  padding-bottom: 0;
+}
+
+header h1 {
+  font-size: 72px;
+  font-weight: normal;
+  margin: 0;
+  font-family: 'CommandoCommando';
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0 2px 1px #000;
+  line-height: 1;
+  background: transparent url('../../../images/logo.png') no-repeat left top;
+  padding-left: 70px;
+  font-family: 'CommandoCommando';
+}
+
+header h1 a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+header h2 {
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0;
+  text-shadow: 0 2px 1px #000;
+  color: #fed400;
+  font-family: 'BebasNeueRegular';
+  text-transform: uppercase;
+  padding: 2px 40px 5px 70px;
+  line-height: 25px;
+  background: transparent url('../../../images/bucket.png') no-repeat right top;
+  display: inline-block;
+  font-family: 'BebasNeueRegular';
+}
+
+header h2 a{
+  color: #fed400;
+  text-decoration: none;
+}
